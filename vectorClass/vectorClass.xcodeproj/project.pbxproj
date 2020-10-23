@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9FD98A252542BFEB00FF2C59 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FD98A242542BFEB00FF2C59 /* main.cpp */; };
 		9FD98A2E2542C01000FF2C59 /* vectorClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FD98A2C2542C01000FF2C59 /* vectorClass.cpp */; };
+		9FD98A372542C0E100FF2C59 /* vectorClassTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9FD98A362542C0E100FF2C59 /* vectorClassTests.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +29,20 @@
 		9FD98A242542BFEB00FF2C59 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9FD98A2C2542C01000FF2C59 /* vectorClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vectorClass.cpp; sourceTree = "<group>"; };
 		9FD98A2D2542C01000FF2C59 /* vectorClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vectorClass.hpp; sourceTree = "<group>"; };
+		9FD98A342542C0E100FF2C59 /* vectorClassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vectorClassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD98A362542C0E100FF2C59 /* vectorClassTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = vectorClassTests.mm; sourceTree = "<group>"; };
+		9FD98A382542C0E100FF2C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9FD98A1E2542BFEB00FF2C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD98A312542C0E100FF2C59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				9FD98A232542BFEB00FF2C59 /* vectorClass */,
+				9FD98A352542C0E100FF2C59 /* vectorClassTests */,
 				9FD98A222542BFEB00FF2C59 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				9FD98A212542BFEB00FF2C59 /* vectorClass */,
+				9FD98A342542C0E100FF2C59 /* vectorClassTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +78,15 @@
 				9FD98A2D2542C01000FF2C59 /* vectorClass.hpp */,
 			);
 			path = vectorClass;
+			sourceTree = "<group>";
+		};
+		9FD98A352542C0E100FF2C59 /* vectorClassTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FD98A362542C0E100FF2C59 /* vectorClassTests.mm */,
+				9FD98A382542C0E100FF2C59 /* Info.plist */,
+			);
+			path = vectorClassTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +109,23 @@
 			productReference = 9FD98A212542BFEB00FF2C59 /* vectorClass */;
 			productType = "com.apple.product-type.tool";
 		};
+		9FD98A332542C0E100FF2C59 /* vectorClassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD98A392542C0E100FF2C59 /* Build configuration list for PBXNativeTarget "vectorClassTests" */;
+			buildPhases = (
+				9FD98A302542C0E100FF2C59 /* Sources */,
+				9FD98A312542C0E100FF2C59 /* Frameworks */,
+				9FD98A322542C0E100FF2C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vectorClassTests;
+			productName = vectorClassTests;
+			productReference = 9FD98A342542C0E100FF2C59 /* vectorClassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +135,9 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					9FD98A202542BFEB00FF2C59 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					9FD98A332542C0E100FF2C59 = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
@@ -114,9 +156,20 @@
 			projectRoot = "";
 			targets = (
 				9FD98A202542BFEB00FF2C59 /* vectorClass */,
+				9FD98A332542C0E100FF2C59 /* vectorClassTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FD98A322542C0E100FF2C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FD98A1D2542BFEB00FF2C59 /* Sources */ = {
@@ -125,6 +178,14 @@
 			files = (
 				9FD98A252542BFEB00FF2C59 /* main.cpp in Sources */,
 				9FD98A2E2542C01000FF2C59 /* vectorClass.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD98A302542C0E100FF2C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD98A372542C0E100FF2C59 /* vectorClassTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +319,38 @@
 			};
 			name = Release;
 		};
+		9FD98A3A2542C0E100FF2C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = vectorClassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = theos.vectorClassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9FD98A3B2542C0E100FF2C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = vectorClassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = theos.vectorClassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +368,15 @@
 			buildConfigurations = (
 				9FD98A292542BFEB00FF2C59 /* Debug */,
 				9FD98A2A2542BFEB00FF2C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD98A392542C0E100FF2C59 /* Build configuration list for PBXNativeTarget "vectorClassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD98A3A2542C0E100FF2C59 /* Debug */,
+				9FD98A3B2542C0E100FF2C59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

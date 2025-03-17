@@ -1,1 +1,2 @@
 # vectorClass
+Just simple vectorClass
